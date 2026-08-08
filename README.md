@@ -1,2 +1,2 @@
 # WIP Tools Section! 
-# Click the folders above for my tools so far :)!
+# Click the folder above for my tools so far :)!
