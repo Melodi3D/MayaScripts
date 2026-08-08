@@ -1,5 +1,5 @@
 """
-Landmark Tool by Melodi
+Landmark Tool by Melodi (WIP)
 """
 
 from maya import cmds
