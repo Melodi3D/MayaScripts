@@ -17,7 +17,7 @@ def create_landmark(colors):
 
     #creates landmark shader with lambert material
 
-    landmark_shader = cmds.shadingNode(“lambert”, asShader=True)
+    landmark_shader = cmds.shadingNode("lambert", asShader=True)
 
 
     #assigns shader 
@@ -25,15 +25,12 @@ def create_landmark(colors):
     cmds.hyperShade(assign=landmark_shader)
 
 
-
-
-
     #creates landmark shader colors
 
     cmds.setAttr(
 
-    f”{landmark_shader}.color”,
+    f"{landmark_shader}.color",
 
     colors[0], colors[1], colors[2],
 
-    type=“double3”)
+    type="double3")
