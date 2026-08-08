@@ -1,3 +1,7 @@
+"""
+Landmark Tool by Melodi
+"""
+
 from maya import cmds
 
 def create_landmark(colors):
