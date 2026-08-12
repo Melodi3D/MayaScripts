@@ -15,6 +15,10 @@ def create_landmark(colors):
     if not selection:
     raise RuntimeError("Error: Nothing is selected")
 
+    # error handling due to lack of selection
+    if not :
+    raise RuntimeError("Error: Nothing is selected")
+
     #selects selection
 
     cmds.select(selection)
