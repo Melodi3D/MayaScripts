@@ -34,8 +34,6 @@ def create_landmark(colors):
         if color < 0.0 or color > 1.0:
             raise RuntimeError("Error: Colors should be between 0.0 and 1.0 ")
 
-
-    
     #selects selection
 
     cmds.select(selection)
