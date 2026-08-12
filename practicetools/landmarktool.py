@@ -13,11 +13,17 @@ def create_landmark(colors):
 
     # error handling due to lack of selection
     if not selection:
-    raise RuntimeError("Error: Nothing is selected")
+        raise RuntimeError("Error: Nothing is selected")
 
     # error handling due to lack of faces in selection
     if not cmds.filterExpand(sm=34):
-    raise RuntimeError("Error: Nothing is selected")
+        raise RuntimeError("Error: Nothing is selected")
+
+    # error handling due to wrong colors
+    for color in colors:
+        if color < 0.0 or color > 1.0:
+            raise RuntimeError("Error: Colors should be between 0.0 and 1.0 ")
+
 
     
     #selects selection
