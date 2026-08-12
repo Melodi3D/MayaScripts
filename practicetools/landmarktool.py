@@ -5,6 +5,16 @@ Landmark Tool by Melodi (WIP)
 # imports maya commands
 from maya import cmds
 
+# color presets
+red = (1.0, 0.0, 0.0)
+orange = (1.0, 0.5, 0.0)
+yellow =  (1.0, 1.0, 0.0)
+green = (0.0, 1.0, 0.0)
+blue = (0.0, 0.0, 1.0)
+magenta = (1.0, 0.0, 1.0)
+cyan = (0.0, 1.0, 1.0)
+pink = (1.0, 0.4, 0.7)
+
 # function for creating landmarks
 def create_landmark(colors):
     #user selects faces
