@@ -1,5 +1,5 @@
 """
-Zero Out Controls by Melodi (WIP)
+Zero Out Controls by Melodi
 """
 
 # Explanation:
