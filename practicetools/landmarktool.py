@@ -29,7 +29,7 @@ def create_landmark(colors):
     cmds.hyperShade(assign=landmark_shader)
 
 
-    #creates landmark shader colors
+    #sets the colors for the landmark shader to RGB values
 
     cmds.setAttr(
 
