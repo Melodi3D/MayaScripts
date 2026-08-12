@@ -21,12 +21,12 @@ def create_landmark(colors):
 
     selection = cmds.ls(sl=True, flatten=True)
 
-    # selects faces
-    cmds.select(faces)
-    
     # assigns selected faces to the variable faces
    faces = cmds.filterExpand(sm=34)
 
+    # selects faces
+    cmds.select(faces)
+    
     # error handling due to no selection
     if not selection:
         raise RuntimeError("Error: Nothing is selected")
