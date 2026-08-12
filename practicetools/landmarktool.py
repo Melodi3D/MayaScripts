@@ -22,7 +22,7 @@ def create_landmark(colors):
     selection = cmds.ls(sl=True, flatten=True)
 
     # assigns selected faces to the variable faces
-   faces = cmds.filterExpand(sm=34)
+    faces = cmds.filterExpand(sm=34)
 
     # error handling due to no selection
     if not selection:
@@ -37,13 +37,14 @@ def create_landmark(colors):
         if color < 0.0 or color > 1.0:
             raise RuntimeError("Error: Colors should be between 0.0 and 1.0 ")
 
-    # selects faces
-    cmds.select(faces)
-    
 
     #creates landmark shader as a shader node, with lambert material
 
     landmark_shader = cmds.shadingNode("lambert", asShader=True)
+    
+    
+    # selects faces
+    cmds.select(faces)
 
 
     #assigns shader to the selected faces
