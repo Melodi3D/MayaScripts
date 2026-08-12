@@ -1,9 +1,10 @@
 """
 Landmark Tool by Melodi (WIP)
 """
-
+# imports maya commands
 from maya import cmds
 
+# function for creating landmarks
 def create_landmark(colors):
     #user selects faces
 
