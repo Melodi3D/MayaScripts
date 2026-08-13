@@ -1,5 +1,5 @@
 """
-Landmark Tool by Melodi (WIP)
+Landmark Tool by Melodi
 """
 # Explanation:
 # imports maya commands
