@@ -1,7 +1,7 @@
 """
 Landmark Tool by Melodi
 """
-# Explanation:
+# Explanation is in comments
 # imports maya commands
 from maya import cmds
 
@@ -37,19 +37,15 @@ def create_landmark(colors):
         if color < 0.0 or color > 1.0:
             raise RuntimeError("Error: Colors should be between 0.0 and 1.0 ")
 
-
     #creates landmark shader as a shader node, with lambert material
 
     landmark_shader = cmds.shadingNode("lambert", asShader=True)
     
-    
     # selects faces
     cmds.select(faces)
 
-
     #assigns shader to the selected faces
     cmds.hyperShade(assign=landmark_shader)
-
 
     #sets the colors for the landmark shader to RGB values
 
