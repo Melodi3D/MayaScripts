@@ -1,7 +1,7 @@
 """
-Landmark Tool by Melodi
+Landmark Tool by Melodi (WIP)
 """
-# Explanation is in comments
+# Explanation:
 # imports maya commands
 from maya import cmds
 
@@ -15,13 +15,20 @@ magenta = (1.0, 0.0, 1.0)
 cyan = (0.0, 1.0, 1.0)
 pink = (1.0, 0.4, 0.7)
 
+def faces_confirm():
+    cmds.confirmDialog(
+        title="Landmark Tool",
+        message="Please select at least one polygon face.",
+        button=["OK"]
+    )
+    
 # function for creating landmarks
 def create_landmark(colors):
     #user selects faces
 
     selection = cmds.ls(sl=True, flatten=True)
 
-    # assigns selected faces to the variable faces
+    # filters the selection to polygon faces
     faces = cmds.filterExpand(sm=34)
 
     # error handling due to no selection
@@ -30,6 +37,7 @@ def create_landmark(colors):
 
     # error handling due to no faces in selection
     if not faces:
+        faces_confirm()
         raise RuntimeError("Error: No faces selected")
 
     # error handling due to wrong colors
