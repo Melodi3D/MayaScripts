@@ -1,5 +1,5 @@
 # Tools Section! 
-<small>Click the folder above for my tools so far :)!<small/>
+<small>Click the folder above for my practice tools so far :)!<small/>
 
 <small>**Maya Commands Documentation**<small/>
 
