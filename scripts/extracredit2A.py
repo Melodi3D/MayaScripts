@@ -1,5 +1,5 @@
 # Melodi Extra Credit Script #2
-# Control Object Offset Grp
+# Object Offset Grp
 
 # Importing Maya Commands
 import maya.cmds as cmds
