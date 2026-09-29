@@ -1,6 +1,6 @@
 # Tools
 
-<small>Click the folder above to check out my additional python tools so far :)</small>
+<small>Click the folder above to check out my additional Python tools so far :)</small>
 
 <small>**Maya Commands Documentation:**  
 https://help.autodesk.com/cloudhelp/2025/ENU/Maya-Tech-Docs/Commands/</small>
